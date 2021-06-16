@@ -91,7 +91,7 @@ wget --no-check-certificate "https://github.com/drgx2x/xderm-mini/raw/main/opens
 wget --no-check-certificate "https://github.com/drgx2x/xderm-mini/raw/main/stunnel_5.44-4_aarch64_cortex-a53.ipk" -O /root/xderm-mini/stunnel_5.44-4_aarch64_cortex-a53.ipk
 wget --no-check-certificate "https://github.com/drgx2x/xderm-mini/raw/main/sshpass_1.06-Rureka.com_aarch64_cortex-a53.ipk" -O /root/xderm-mini/sshpass_1.06-Rureka.com_aarch64_cortex-a53.ipk
 opkg install /root/xderm-mini/*.ipk
-opkg install procps-ng-ps git curl sshpass python3-pip
+opkg install procps-ng-ps git curl python3-pip
 python3 -m pip install requests beautifulsoup4
 opkg install openssl-util
 opkg install php7 php7-cgi php7-mod-session
