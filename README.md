@@ -1,6 +1,6 @@
 # xderm-mini gui STB OpenWrt
 
-- File tambahan untun install xderm mini gui untuk STB OpenWrt.
+- Install file tambahan xderm mini gui untuk STB OpenWrt.
 - Install Pakai internet yang stabil.
 - auto installer xderm-mini by Vito H.S. Modded drgx2x.
 - xderm mini by Ryan Fauzi and modded by Wegare.
