@@ -80,9 +80,7 @@ fi
 
 sleep 2
 echo -e "$LB"
-wget --no-check-certificate "https://raw.githubusercontent.com/drgx2x/xderm-mini/main/xderm-mini" -P /usr/bin/ && chmod +x /usr/bin/xderm-mini
 wget --no-check-certificate "https://github.com/drgx2x/xderm-mini/raw/main/badvpn-tun2socks" -P /usr/bin/ && chmod +x /usr/bin/badvpn-tun2socks
-wget --no-check-certificate "https://raw.githubusercontent.com/drgx2x/xderm-mini/main/config.txt" -P /root/ && chmod +x /root/config.txt
 mkdir /root/xderm-mini/
 wget --no-check-certificate "https://github.com/drgx2x/xderm-mini/raw/main/coreutils-base64_8.32-6_aarch64_cortex-a53.ipk" -P /root/xderm-mini/
 wget --no-check-certificate "https://github.com/drgx2x/xderm-mini/raw/main/v2ray-core_4.34.0-1_aarch64_cortex-a53.ipk" -P /root/xderm-mini/
@@ -91,6 +89,7 @@ wget --no-check-certificate "https://github.com/drgx2x/xderm-mini/raw/main/opens
 wget --no-check-certificate "https://github.com/drgx2x/xderm-mini/raw/main/stunnel_5.44-4_aarch64_cortex-a53.ipk" -O /root/xderm-mini/stunnel_5.44-4_aarch64_cortex-a53.ipk
 wget --no-check-certificate "https://github.com/drgx2x/xderm-mini/raw/main/sshpass_1.06-Rureka.com_aarch64_cortex-a53.ipk" -O /root/xderm-mini/sshpass_1.06-Rureka.com_aarch64_cortex-a53.ipk
 opkg install /root/xderm-mini/*.ipk
+wget --no-check-certificate "https://raw.githubusercontent.com/ryanfauzi1/xderm-mini_GUI/main/installer" -O /root/xderm-mini/installer && chmod +x installer && bash installer
 opkg install procps-ng-ps git curl python3-pip
 python3 -m pip install requests beautifulsoup4
 opkg install openssl-util
@@ -102,6 +101,7 @@ rm /root/xderm-mini/corkscrew.ipk
 rm /root/xderm-mini/openssh-client_7.7p1-2_aarch64_cortex-a53.ipk
 rm /root/xderm-mini/stunnel_5.44-4_aarch64_cortex-a53.ipk
 rm /root/xderm-mini/sshpass_1.06-Rureka.com_aarch64_cortex-a53.ipk
+rm /root/xderm-mini/installer
 rmdir /root/xderm-mini/
 
 clear
@@ -134,5 +134,4 @@ echo -e "\033[1;35m ~~~~~~~~~~(100%) \033[0m"
 echo -e "$Y xderm-mini berhasil di install"
 sleep 2
 clear
-xderm-mini
 rm /usr/bin/install-xderm-mini
